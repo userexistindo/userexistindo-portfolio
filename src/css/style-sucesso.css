@@ -1,0 +1,203 @@
+.nav-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.change-theme{
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: color .3s;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+main{
+  background-color: var(--white-color);
+
+  max-width: 416px;
+  padding-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+main i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+  color: green;
+}
+
+main section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+main section h1{
+  font-size: var(--h1-font-size);
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--title-color);
+}
+
+main section span{
+  text-align: center;
+  font-size: var(--smaller-font-size);
+}
+
+main section .back{
+  color: var(--black-color);
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: all 0.3s;
+}
+
+main section .back:hover{
+  color: var(--first-color);
+}
+
+ /*========== Variables Dark theme ==========*/
+ body.dark-theme{
+  --first-color: hsl(20, 100%, 50%);
+  --black-color: hsl(0, 0%, 18%);
+  --black-color-light: hsl(0, 0%, 30%);
+  --title-color: hsl(0, 0%, 95%);
+  --text-color: hsl(0, 0%, 70%);
+  --body-color: hsl(0, 0%, 8%);
+  --container-color: hsl(0, 0%, 12%);
+}
+
+/*========== 
+  Color changes in some parts of 
+  the website, in dark theme
+==========*/
+.dark-theme main{
+  background-color: var(--container-color);
+}
+
+.dark-theme main section .back{
+  color: var(--black-color-light);
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: all 0.3s;
+}
+
+.dark-theme main section .back:hover{
+  color: var(--first-color);
+}
+
+.dark-theme::-webkit-scrollbar{
+  background-color: hsl(0, 0%, 20%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb{
+  background-color: hsl(0, 0%, 30%);
+}
+.dark-theme::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(0, 0%, 40%);
+}
+
+@media screen and (max-width: 650px){
+  body{
+    margin-top: 2rem;
+  }
+
+  .nav-buttons i{
+    font-size: 2rem;
+  }
+
+  main i{
+    font-size: 5rem;
+  }
+
+  main section h1{
+    font-size: 18px;
+  }
+
+  main section span{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 980px){
+  body{
+    margin-top: 2rem;
+  }
+
+  .nav-buttons i{
+    font-size: 2rem;
+  }
+
+  main i{
+    font-size: 8rem;
+  }
+
+  main section h1{
+    font-size: 24px;
+  }
+
+  main section span{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  body{
+    margin-top: 8rem;
+  }
+
+  .nav-buttons i{
+    font-size: 1.5rem;
+  }
+
+  main i{
+    font-size: 10rem;
+  }
+
+  main section h1{
+    font-size: 36px;
+  }
+
+  main section span{
+    font-size: 18px;
+  }
+
+  main section .back{
+    margin-top: 3rem;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1440px){
+  body{
+    margin-top: 2rem;
+  }
+
+  .nav-buttons i{
+    font-size: 2rem;
+  }
+
+  main i{
+    font-size: 7rem;
+  }
+
+  main section h1{
+    font-size: 30px;
+  }
+}
+
